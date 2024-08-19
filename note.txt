@@ -1,0 +1,33 @@
+
+
+
+"@nestjs/swagger": "^7.4.0",
+  Dùng để tạo web api swager định dạng các api property param , response request => tạo document api
+
+nestjs/typeorm
+  làm việc với db
+
+@nestjs/config
+  lấy data từ .env qua method get
+
+"class-transformer": "^0.5.1",
+"class-validator": "^0.14.1",
+    dung cho việc validator
+
+@nestjs/jwt
+    dung cho việc gen jwt token
+
+"bcrypt": "^5.1.1",
+    dung cho việc mã hóa pass
+
+
+tạo folder quảng lý ko để cho db tự sync và quảng lý file sql
+tạo class data-source.ts => config và ìmport nó ở app module TypeOrmModule.forRoot(dataSourceOptions ),
+tạo thư mục entities/file.entiry.ts
+"migration:generate": "npm run typeorm -- migration:generate",
+"migration:run": "npm run typeorm -- migration:run",
+"migration:revert": "npm run typeorm -- migration:revert"
+
+@types/multer
+@path
+    làm việc với upload img
